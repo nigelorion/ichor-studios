@@ -24,6 +24,10 @@ body {
     color: inherit;
     margin: 1%;
     transition: color, transform 150ms;
+    @media (max-width: 600px) {
+      font-size: 1.2em;
+    }
+
     &:hover {
       color: rgb(98, 190, 196);
       transform: scale(1.2);
@@ -35,6 +39,12 @@ body {
     // left: 5px;
     margin-right: 500px;
     font-size: 2em;
+    @media (max-width: 1100px) {
+      margin-right: inherit;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -72,6 +82,11 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
+    @media (max-width: 600px) {
+      height: 50px;
+      width: 130px;
+      font-size: 1em;
+    }
 
     &:hover {
       background-color: white;
@@ -95,6 +110,9 @@ body {
     color: white;
     flex-basis: 40%;
     line-height: 75px;
+    @media (max-width: 600px) {
+      font-size: 3em;
+    }
 
   }
 
@@ -108,15 +126,20 @@ body {
 
 }
 
-.about, .work, .team, .contact {
+.about, .work, .team, {
   height: 100vh;
   &__wrapper {
     padding: 10%;
+  }
+  @media (max-width: 600px) {
+    height: 100%;
   }
 }
 
 .about__wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
 
 }
@@ -125,12 +148,19 @@ body {
   margin: 3%;
   width: 400px;
 
+
+
+
   h1 {
     font-size: 3em;
+    border-bottom: solid 1px gray;
+    margin-bottom: 10px;
 
   }
   p {
     font-size: 1.2em;
+    color: rgb(98, 190, 196);
+    line-height: 20px;
   }
 }
 
@@ -141,4 +171,33 @@ body {
   align-items: center;
   width: 100%;
   background-color: rgb(182, 182, 182);
+}
+
+.contact__wrapper {
+  margin: 13%;
+  text-align: center;
+  p {
+    margin: 3%;
+    font-size: 2.8em;
+    @media (max-width: 800px) {
+      font-size: 2em;
+    }
+  }
+}
+
+.team__wrapper {
+  display: flex;
+}
+
+.team__item {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about {
+  @media (max-width: 1200px) {
+    height: 100%;
+  }
 }
