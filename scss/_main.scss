@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  box-shadow: 2px 0px 2px 0px;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+
+
+  &__items {
+    font-size: 2em;
+    text-decoration: none;
+    color: inherit;
+    margin: 1%;
+    transition: color, transform 150ms;
+    &:hover {
+      color: rgb(98, 190, 196);
+      transform: scale(1.2);
+    }
+  }
+  &__logo {
+    // position: absolute;
+    // top: 5px;
+    // left: 5px;
+    margin-right: 500px;
+    font-size: 2em;
+  }
+}
+
+
+
+.hero {
+  height: 100vh;
+  // background-image: url(../road.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    background-color: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5%;
+    justify-content: space-around;;
+
+  }
+  &__btn {
+    border: none;
+
+    height: 70px;
+    width: 170px;
+    background-color: rgb(98, 190, 196);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+
+    &:hover {
+      background-color: white;
+      color: rgb(98, 190, 196);
+    }
+    &:hover ~ .hero__arrow {
+      opacity: 1;
+    }
+  }
+
+  &__arrow {
+    opacity: 0;
+    transition: all 500ms;
+    margin: 10%;
+    font-size: 5em;
+    width: 70px;
+  }
+
+  &__title {
+    font-size: 4em;
+    color: white;
+    flex-basis: 40%;
+    line-height: 75px;
+
+  }
+
+  .button__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+
+.about, .work, .team, .contact {
+  height: 100vh;
+  &__wrapper {
+    padding: 10%;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+
+
+}
+
+.about__item {
+  margin: 3%;
+  width: 400px;
+
+  h1 {
+    font-size: 3em;
+
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(182, 182, 182);
+}

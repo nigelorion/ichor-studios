@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@viewport {
+  width: device-width; }
+html {
+  box-sizing: border-box;
+  height: 100%; }
+
+*:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #555555;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility; }
+
+a {
+  background: transparent;
+  text-decoration: none;
+  transition: color .2s; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  box-shadow: 2px 0px 2px 0px;
+  position: fixed;
+  top: 0px;
+  width: 100vw; }
+  .navbar__items {
+    font-size: 2em;
+    text-decoration: none;
+    color: inherit;
+    margin: 1%;
+    transition: color, transform 150ms; }
+    .navbar__items:hover {
+      color: #62bec4;
+      transform: scale(1.2); }
+  .navbar__logo {
+    margin-right: 500px;
+    font-size: 2em; }
+
+.hero {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero__wrapper {
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    justify-content: space-around; }
+  .hero__btn {
+    border: none;
+    height: 70px;
+    width: 170px;
+    background-color: #62bec4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em; }
+    .hero__btn:hover {
+      background-color: white;
+      color: #62bec4; }
+    .hero__btn:hover ~ .hero__arrow {
+      opacity: 1; }
+  .hero__arrow {
+    opacity: 0;
+    transition: all 500ms;
+    margin: 10%;
+    font-size: 5em;
+    width: 70px; }
+  .hero__title {
+    font-size: 4em;
+    color: white;
+    flex-basis: 40%;
+    line-height: 75px; }
+  .hero .button__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.about, .work, .team, .contact {
+  height: 100vh; }
+  .about__wrapper, .work__wrapper, .team__wrapper, .contact__wrapper {
+    padding: 10%; }
+
+.about__wrapper {
+  display: flex; }
+
+.about__item {
+  margin: 3%;
+  width: 400px; }
+  .about__item h1 {
+    font-size: 3em; }
+  .about__item p {
+    font-size: 1.2em; }
+
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #b6b6b6; }
+
+/*# sourceMappingURL=app.css.map */
