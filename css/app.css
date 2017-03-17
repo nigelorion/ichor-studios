@@ -212,9 +212,31 @@ body {
 .team__wrapper {
   display: flex; }
 
-.team__item img {
+.team__description {
+  flex-basis: 33%;
+  margin: 5%;
+  opacity: 0;
+  transition: all 300ms; }
+
+.team__item {
+  height: 200px;
   width: 200px;
-  height: 200px; }
+  background-image: url(../img/jennifer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms; }
+  .team__item h1 {
+    color: white; }
+  .team__item:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1); }
+  .team__item:hover ~ .team__description {
+    opacity: 1; }
 
 @media (max-width: 1200px) {
   .about {
